@@ -1,0 +1,231 @@
+@import "Lato.scss";
+
+body {
+    margin: 0px;
+
+    background-color: white;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 500px;
+        height: auto;
+
+        font-family: "Lato";
+
+        #fb_sign {
+            width: 318px;
+            height: 38px;
+
+            border-radius: 4px; 
+            background-color: #4568b2;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: "Lato";
+            color: white;
+
+            i {
+                color: white;
+                margin-right: 8px;
+            }
+        }
+
+        #google_sign {
+            width: 318px;
+            height: 38px;
+
+            border-radius: 4px;  
+            background-color: #d34836;
+            margin-top: 10px; 
+            margin-bottom: 15px;     
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: "Lato";
+            color: white;
+
+            i {
+                color: white;
+                margin-right: 8px;
+            }
+        }
+
+        #line_or {
+            width: 318px;
+
+            position: relative;
+            top: 15px;
+            border-bottom: 1px solid #c3c3c3;
+        }
+
+        #or {
+            background-color: white;
+
+            position: relative;
+            top: -14px;
+
+            width: 22px;
+            text-align: center;
+            margin-bottom: 9px;
+
+            font-family: "Lato Light";
+            color: #757575;
+        }
+
+        #email_False {
+            display: none;
+        }
+
+        .email_True {
+            display: block;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+
+            border: 0.5px solid #e6e2e2;
+            border-radius: 4px; 
+
+            padding-left: 15px;
+
+            font-size: 13px;
+            color: #404040;
+            margin-bottom: 10px;
+        }
+
+        #birth {
+            width: 405px;
+
+            margin-top: 15px;
+            margin-bottom: 18px;
+
+            label {
+                font-size: 17px;
+                color: #404040;
+            }
+
+            p {
+                margin: 5px 0px 20px 0px;
+
+                font-family: "Lato Light";
+                font-size: 13px;
+                color: #404040;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    width: 318px;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    select {
+                        height: 30px;
+
+                        font-family: "Lato Light";
+                        font-size: 13px;
+                        color: #404040;
+
+                        background-color: white;
+                        border-color: #c3c3c3;
+                    }
+
+                    select:first-child {
+                        width: 35%;
+                    }
+
+                    select:nth-child(2) {
+                        width: 19%;
+                    }
+
+                    select:last-child {
+                        width: 27%;
+                    }
+                }
+            }
+            
+        }
+
+        span {
+            width: 405px;
+
+            #checkbox {
+                width: auto;
+                height: auto;
+
+                margin: 0px;
+                margin-right: 6px;
+            }
+
+            label {
+                font-family: "Lato Light";
+                font-size: 14px;
+                color: #404040;
+            }
+        }
+
+        #terms {
+            width: 318px;
+
+            font-size: 10px;
+            font-family: "Lato";
+
+            margin: 20px 0px 0px 0px;
+
+            a {
+                color: #008489;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        #submit_label1, #submit_label2 {
+            width: 318px;
+            height: 30px;
+
+            background-color: #ff5a5f;
+            color: whitesmoke;
+            font-family: "Lato";
+
+            margin-top: 10px;
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+            text-align: center;
+            padding-top: 8px;
+
+            letter-spacing: 1px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+        }
+
+    }
+}

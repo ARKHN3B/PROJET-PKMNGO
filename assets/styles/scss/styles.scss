@@ -1,0 +1,365 @@
+@font-face {
+    font-family: "pokemon 1";
+    src: url('pokemon/Pokemon Hollow.ttf');
+}
+
+@font-face {
+    font-family: "pokemon 2";
+    src: url('pokemon/Pokemon Solid.ttf');
+}
+
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+::-webkit-scrollbar-button {
+width: 0px;
+height: 0px;
+}
+::-webkit-scrollbar-thumb {
+background: #364044;
+border: 85px none #ffffff;
+border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #ff6352;
+}
+::-webkit-scrollbar-thumb:active {
+background: #6a93dc;
+}
+::-webkit-scrollbar-track {
+background: #a1e97a;
+border: 0px none #5dffff;
+border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+background: #b5e17b;
+}
+::-webkit-scrollbar-track:active {
+background: #333333;
+}
+::-webkit-scrollbar-corner {
+background: transparent;
+}
+
+body {
+
+    margin: 0px;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #79caf9;
+    background-image: url('../../_pictures/bd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80px;
+
+    #border-map {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+
+        width: 60%;
+        height: auto;
+    }
+
+    #map {
+        width: 37.5%;
+        height: 51.8%;
+
+        position: fixed;
+        top: 146px;
+        left: 192px;
+
+        z-index: 999;
+    }
+
+    #pokedex {
+        position: fixed;
+        top: 126px;
+        left: 800px;
+
+        width: 44%;
+        height: auto;
+    }
+
+    .player {
+        background-image: url('../../_pictures/bd_Pokedex.png');
+        background-size: cover;
+
+        border: 4px solid white;
+
+        width: 252px;
+        height: 208px;
+
+        position: fixed;
+        bottom: 353px;
+        right: 354px;
+
+        border-radius: 5px; 
+
+        #pokemon {
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+
+        #type {
+            font-family: "Lato";
+            color: #2d70b7;
+            font-size: 22px;
+
+            position: absolute;
+            top: 254px;
+            left: 62px;
+        }
+
+        #typecover {
+            font-family: "Lato";
+            color: #ffcb05;
+            font-size: 22px;
+
+            position: absolute;
+            top: 254px;
+            left: 62px;
+        }
+    }
+
+    #divname {
+        position: relative;
+        left: 1175px;
+        top: -145px;
+
+        width: 210px;
+        height: 85px;
+        background-color: #00413d;
+        border-radius: 7px;
+        border: 2px solid black;
+        
+        #name {
+            font-family: "pokemon 2";
+            color: #2d70b7;
+
+            position: absolute;
+            top: 10px;
+            left: 40px;
+        }
+
+        #namecover {
+            font-family: "pokemon 1";
+            color: #ffcb05;
+
+            position: absolute;
+            top: 10px;
+            left: 40px;
+        }
+    }
+
+    #bdcover {
+        width: 300px;
+        height: 300px;
+        
+        background-color: #81da7c;
+
+        position: fixed;
+        top: 200px;
+        left: 760px;
+    }
+
+    #gollum {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    #button-pkdex {
+        width: 45px;
+        height: 45px;
+
+        border-radius: 50%;
+
+        position: fixed;
+        top: 457px;
+        left: 828px;
+
+        background-color: #e0e0e0;
+
+        cursor: pointer;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    #displayPokedex {
+
+        div {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            border-bottom: 1px solid black;
+            
+            img {
+                margin-right: 10px;
+            }
+
+            p {
+                margin: 0px;
+                padding-top: 8px;
+
+                font-family: "Lato";
+                color: black;
+            }
+
+            .PC {
+                color : #007971;
+                position: absolute;
+                right: 5px;
+            }
+        }
+
+        div:last-child {
+            border-bottom: none;
+        }
+    }
+
+    #event {
+        width: 50px;
+        height: 50px;
+
+        cursor: pointer;
+
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    form {
+        position: fixed;
+        top: 19px;
+        right: 70px;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 430px;
+
+
+        input {
+            height: 35px;
+            border: none;
+
+            border-radius: 5px;
+
+            padding-left: 10px;
+        }
+
+        input:focus {
+            outline-color: #d33730;
+        }
+
+        select {
+            height: 40px;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        select:focus {
+            background-color: #d33730;
+            color: white;
+        }
+
+        label {
+            border-radius: 5px;
+            width: 80px;
+            height: 37px;
+
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            cursor: pointer;
+
+            div {
+                position: relative;
+                width: 80px;
+                height: 37px;
+
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+                background-color: #d33730;
+                border-radius: 5px;
+
+                p:first-child {
+                    position: absolute;
+                    margin: 8px 0px 0px 0px;
+
+                    font-family: "pokemon 2";
+                    font-size: 18px;
+                    color: white;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    margin: 8px 0px 0px 0px;
+                    font-family: "pokemon 1";
+                    font-size: 18.3px;
+                }
+            }
+
+            div:hover {
+                background-color: white;
+
+                p:first-child {
+                    color: #d33730
+                }
+            }
+        }
+    }
+
+    #eventDisplayer {
+
+        width: 40%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.40);
+
+        position: fixed;
+        bottom: 0px;
+        left: 174px;
+
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 30%;
+            height: 100%;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            background-color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow-y: scroll;
+
+            h4 {
+                margin: 3px 0px;
+                font-family: "Lato";
+                color: #d33730;
+            }
+
+            p {
+                margin: 0px;
+            }
+        }
+    }
+
+    @import "styles_1920x1080";
+}

@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Lato Black";
+  src: url("Lato/Lato-Black.ttf"); }
+
+@font-face {
+  font-family: "Lato Black-Italic";
+  src: url("Lato/Lato-BlackItalic.ttf"); }
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("Lato/Lato-Bold.ttf"); }
+
+@font-face {
+  font-family: "Lato Bold-Italic";
+  src: url("Lato/Lato-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: "Lato Hairline";
+  src: url("Lato/Lato-Hairline.ttf"); }
+
+@font-face {
+  font-family: "Lato Hairline-Italic";
+  src: url("Lato/Lato-HairlineItalic.ttf"); }
+
+@font-face {
+  font-family: "Lato Italic";
+  src: url("Lato/Lato-Italic.ttf"); }
+
+@font-face {
+  font-family: "Lato Light";
+  src: url("Lato/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "Lato Light-Italic";
+  src: url("Lato/Lato-LightItalic.ttf"); }
+
+@font-face {
+  font-family: "Lato";
+  src: url("Lato/Lato-Regular.ttf"); }
+
+body {
+  margin: 0px;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    font-family: "Lato"; }
+    body form #fb_sign {
+      width: 318px;
+      height: 38px;
+      border-radius: 4px;
+      background-color: #4568b2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Lato";
+      color: white; }
+      body form #fb_sign i {
+        color: white;
+        margin-right: 8px; }
+    body form #google_sign {
+      width: 318px;
+      height: 38px;
+      border-radius: 4px;
+      background-color: #d34836;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Lato";
+      color: white; }
+      body form #google_sign i {
+        color: white;
+        margin-right: 8px; }
+    body form #line_or {
+      width: 318px;
+      position: relative;
+      top: 15px;
+      border-bottom: 1px solid #c3c3c3; }
+    body form #or {
+      background-color: white;
+      position: relative;
+      top: -14px;
+      width: 22px;
+      text-align: center;
+      margin-bottom: 9px;
+      font-family: "Lato Light";
+      color: #757575; }
+    body form #email_False {
+      display: none; }
+    body form .email_True {
+      display: block; }
+    body form input {
+      width: 300px;
+      height: 30px;
+      border: 0.5px solid #e6e2e2;
+      border-radius: 4px;
+      padding-left: 15px;
+      font-size: 13px;
+      color: #404040;
+      margin-bottom: 10px; }
+    body form #birth {
+      width: 405px;
+      margin-top: 15px;
+      margin-bottom: 18px; }
+      body form #birth label {
+        font-size: 17px;
+        color: #404040; }
+      body form #birth p {
+        margin: 5px 0px 20px 0px;
+        font-family: "Lato Light";
+        font-size: 13px;
+        color: #404040; }
+      body form #birth div {
+        display: flex;
+        justify-content: center; }
+        body form #birth div div {
+          width: 318px;
+          display: flex;
+          justify-content: space-between; }
+          body form #birth div div select {
+            height: 30px;
+            font-family: "Lato Light";
+            font-size: 13px;
+            color: #404040;
+            background-color: white;
+            border-color: #c3c3c3; }
+          body form #birth div div select:first-child {
+            width: 35%; }
+          body form #birth div div select:nth-child(2) {
+            width: 19%; }
+          body form #birth div div select:last-child {
+            width: 27%; }
+    body form span {
+      width: 405px; }
+      body form span #checkbox {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        margin-right: 6px; }
+      body form span label {
+        font-family: "Lato Light";
+        font-size: 14px;
+        color: #404040; }
+    body form #terms {
+      width: 318px;
+      font-size: 10px;
+      font-family: "Lato";
+      margin: 20px 0px 0px 0px; }
+      body form #terms a {
+        color: #008489;
+        text-decoration: none; }
+      body form #terms a:hover {
+        text-decoration: underline; }
+    body form #submit_label1, body form #submit_label2 {
+      width: 318px;
+      height: 30px;
+      background-color: #ff5a5f;
+      color: whitesmoke;
+      font-family: "Lato";
+      margin-top: 10px;
+      text-align: center;
+      padding-top: 8px;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      cursor: pointer; }
